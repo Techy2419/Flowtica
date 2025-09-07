@@ -7,17 +7,24 @@
 2. Navigate to "Pages" in the sidebar
 3. Click "Create a project"
 4. Connect your GitHub account and select repository: `Techy2419/Flowtica`
-5. Configure the project:
+5. **IMPORTANT**: Configure the project correctly:
    - **Project name**: `flowtica-dashboard`
    - **Production branch**: `master`
-   - **Framework preset**: `Create React App`
-   - **Build command**: `npm run build`
+   - **Framework preset**: `Create React App` ⚠️ **MUST SELECT THIS**
+   - **Build command**: `npm run build` ⚠️ **NOT "None"**
    - **Build output directory**: `build`
    - **Root directory**: `flowtica-dashboard`
 6. Add Environment Variables:
    - `REACT_APP_SUPABASE_URL`: `https://tvupomcmuqzmlevmpcnx.supabase.co`
    - `REACT_APP_SUPABASE_ANON_KEY`: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2dXBvbWNtdXF6bWxldm1wY254Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcyMDg1MzMsImV4cCI6MjA3Mjc4NDUzM30.wz2Ztmz7XBa986S1r6oLkQeznqzY9d0enngzBLrXajg`
 7. Click "Save and Deploy"
+
+### ⚠️ **CRITICAL**: Make sure you select "Create React App" framework preset!
+If you see "Build command: None" and "Deploy command: npx wrangler deploy", you're in the wrong mode. You need to:
+1. Delete the project
+2. Create a new project
+3. **Select "Create React App" from the framework presets**
+4. This will automatically set the correct build commands
 
 ### Step 2: Get Your Live URL
 After deployment, you'll get a URL like: `https://flowtica-dashboard.pages.dev`

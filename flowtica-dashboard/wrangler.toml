@@ -1,0 +1,9 @@
+name = "flowtica-dashboard"
+compatibility_date = "2025-09-07"
+
+[env.production]
+name = "flowtica-dashboard"
+
+[[env.production.routes]]
+pattern = "flowtica-dashboard.pages.dev/*"
+zone_name = "pages.dev"
